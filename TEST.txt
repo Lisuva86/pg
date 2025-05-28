@@ -1,0 +1,3 @@
+docker run -d --rm --name pg -p 5433:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=docker postgres:10.17-alpine
+docker exec -it pg bash
+createdb medtest -E 'UTF8'
